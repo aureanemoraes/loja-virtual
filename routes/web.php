@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProdutoController;
 
 // loja-virtual.test
 Route::get('/', function () {
@@ -23,3 +24,4 @@ Route::get('/', function () {
 // loja-virtual.test/categorias
 
 Route::resource('categorias', CategoriaController::class);
+Route::resource('produtos', ProdutoController::class);
